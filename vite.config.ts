@@ -5,7 +5,7 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/jd-emirates-auction-bot/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/bid-bot-react/' : '/',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),

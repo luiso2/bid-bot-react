@@ -1,8 +1,8 @@
 # JD Emirates Auction Bot - React WebApp v2
 
-[![Deploy to GitHub Pages](https://github.com/YOUR_USERNAME/jd-emirates-auction-bot/actions/workflows/deploy.yml/badge.svg)](https://github.com/YOUR_USERNAME/jd-emirates-auction-bot/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/luiso2/bid-bot-react/actions/workflows/deploy.yml/badge.svg)](https://github.com/luiso2/bid-bot-react/actions/workflows/deploy.yml)
 
-🚀 **Live Demo**: [https://YOUR_USERNAME.github.io/jd-emirates-auction-bot/](https://YOUR_USERNAME.github.io/jd-emirates-auction-bot/)
+🚀 **Live Demo**: [https://luiso2.github.io/bid-bot-react/](https://luiso2.github.io/bid-bot-react/)
 
 A modern, scalable React-based Telegram WebApp for the JD Emirates vehicle auction system.
 
@@ -102,7 +102,7 @@ yarn preview
 This project is automatically deployed to GitHub Pages using GitHub Actions:
 
 1. **Push to main branch** - Deployment triggers automatically
-2. **Access your site** at `https://YOUR_USERNAME.github.io/jd-emirates-auction-bot/`
+2. **Access your site** at `https://luiso2.github.io/bid-bot-react/`
 3. **Configure repository settings**:
    - Go to repository Settings > Pages
    - Set Source to "GitHub Actions"
