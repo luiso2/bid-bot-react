@@ -12,6 +12,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     permissions:
       contents: read
       pages: write
@@ -30,13 +34,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Build
         run: npm run build
         env:
           NODE_ENV: production
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+          VITE_BUILD_MODE: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
