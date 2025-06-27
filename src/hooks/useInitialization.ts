@@ -69,7 +69,7 @@ export function useInitialization() {
   );
 
   // Fetch brands
-  const { data: brandsData } = useQuery(
+  useQuery(
     QUERY_KEYS.brands,
     api.brands.getAll,
     {

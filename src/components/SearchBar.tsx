@@ -3,7 +3,7 @@
 import React, { useState, useCallback } from 'react';
 import { useAppStore } from '@/store/useAppStore';
 import { debounce } from '@/utils/helpers';
-import { cn } from '@/utils/helpers';
+// import { cn } from '@/utils/helpers';
 
 export const SearchBar: React.FC = () => {
   const filter = useAppStore((state) => state.filter);

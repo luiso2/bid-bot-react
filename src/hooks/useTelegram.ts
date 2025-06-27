@@ -14,7 +14,7 @@ interface TelegramUser {
 }
 
 interface UseTelegramResult {
-  webApp: TelegramWebApp | null;
+  webApp: typeof window.Telegram.WebApp | null;
   user: TelegramUser | null;
   isReady: boolean;
   colorScheme: 'light' | 'dark';
@@ -33,7 +33,7 @@ interface UseTelegramResult {
 export function useTelegram(): UseTelegramResult {
   const [isReady, setIsReady] = useState(false);
   const [colorScheme, setColorScheme] = useState<'light' | 'dark'>('light');
-  const webAppRef = useRef<TelegramWebApp | null>(null);
+  const webAppRef = useRef<typeof window.Telegram.WebApp | null>(null);
   const userRef = useRef<TelegramUser | null>(null);
 
   useEffect(() => {
@@ -177,7 +177,7 @@ export function useTelegram(): UseTelegramResult {
   };
 }
 
-function applyTelegramTheme(tg: TelegramWebApp) {
+function applyTelegramTheme(tg: typeof window.Telegram.WebApp) {
   const themeParams = tg.themeParams || {};
   const root = document.documentElement;
 

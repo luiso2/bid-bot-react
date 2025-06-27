@@ -1,7 +1,7 @@
 // Favorites Tab component
 
 import React, { useState, useCallback } from 'react';
-import { useAppStore, useFavoriteLots } from '@/store/useAppStore';
+import { useFavoriteLots } from '@/store/useAppStore';
 import { LotCard } from '@/components/cards/LotCard';
 import { LotDetailModal } from '@/components/modals/LotDetailModal';
 import { BidModal } from '@/components/modals/BidModal';

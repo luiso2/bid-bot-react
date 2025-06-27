@@ -1,6 +1,6 @@
 // Toast component for notifications
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Toaster, toast as hotToast, ToastOptions } from 'react-hot-toast';
 
 export interface ToastProps {
@@ -10,12 +10,12 @@ export interface ToastProps {
   icon?: string | React.ReactNode;
 }
 
-const toastIcons = {
-  success: '✅',
-  error: '❌',
-  warning: '⚠️',
-  info: 'ℹ️',
-};
+// const toastIcons = {
+//   success: '✅',
+//   error: '❌',
+//   warning: '⚠️',
+//   info: 'ℹ️',
+// };
 
 const toastStyles: Record<string, React.CSSProperties> = {
   success: {
@@ -36,7 +36,7 @@ const toastStyles: Record<string, React.CSSProperties> = {
   },
 };
 
-export const showToast = ({ message, type = 'info', duration = 3000, icon }: ToastProps) => {
+export const showToast = ({ message, type = 'info', duration = 3000 }: ToastProps) => {
   const options: ToastOptions = {
     duration,
     style: {
@@ -47,7 +47,6 @@ export const showToast = ({ message, type = 'info', duration = 3000, icon }: Toa
       fontWeight: 500,
       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
     },
-    icon: icon || toastIcons[type],
     position: 'top-center',
   };
 

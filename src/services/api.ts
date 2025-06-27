@@ -3,7 +3,7 @@
 import axios, { AxiosInstance, AxiosError } from 'axios';
 import { API_BASE_URL } from '@/utils/constants';
 import { logger } from '@/utils/logger';
-import { safeJSONParse } from '@/utils/helpers';
+// import { safeJSONParse } from '@/utils/helpers';
 import type {
   User,
   Lot,
